@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajendra Margale — Full Stack Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-inner">
+      <span class="loader-name">RM</span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">RM<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="./assets/resume.pdf" class="btn-resume" download="Rajendra_Margale_Resume.pdf">
+        Resume <i class="fa-solid fa-arrow-down"></i>
+      </a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#education" class="mob-link">Education</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+      <li>
+        <a href="./assets/resume.pdf" class="mob-link accent" download="Rajendra_Margale_Resume.pdf">
+          Download Resume
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-label reveal-up">Full Stack Developer</p>
+      <h1 class="hero-name reveal-up">Rajendra<br /><span class="outline-text">Margale</span></h1>
+      <p class="hero-tagline reveal-up">
+        Building scalable web apps with clean design,<br />
+        efficient backend and modern user experiences.
+      </p>
+      <div class="hero-cta reveal-up">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#about" class="btn-ghost">About Me</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image reveal-left">
+          <div class="image-placeholder">
+            <span>Photo</span>
+            <p class="img-hint"><img src="./assets/photocopy.jpg" alt=""></p>
+          </div>
+          <!--
+            TO ADD YOUR PHOTO:
+            1. Put your photo at: assets/images/profile.jpg
+            2. Delete the div.image-placeholder above
+            3. Uncomment the line below:
+          <img src="assets/images/profile.jpg" alt="Rajendra Margale" style="width:100%;border-radius:4px;" />
+          -->
+        </div>
+        <div class="about-text reveal-right">
+          <p class="about-bio">
+            Final-year AIML student with a strong foundation in full stack development.
+            Experienced in building responsive, scalable applications using the MERN stack
+            and Python frameworks.
+          </p>
+          <p class="about-detail">
+            I am pursuing a Bachelor of Engineering in Artificial Intelligence and Machine Learning.
+            I have built multiple projects ranging from booking platforms to AI-based systems,
+            focusing on usability, performance and scalability.
+          </p>
+          <p class="about-detail">
+            I build and deploy full stack web applications using the MERN stack, with a growing focus on integrating AI into real-world products. My projects include a hotel booking platform (Velmora), AI-powered legal assistant (Jury AI) and smaller tools like a Notes app and To-Do app. I currently deploy on Render and My goal is to build production-ready
+            applications that solve real-world problems.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Web Development</span>
+            <span class="tag">Artificial Intelligence</span>
+            <span class="tag">DevOps</span>
+            <span class="tag">Cloud Computing</span>
+            <span class="tag">System Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid" id="skills-grid">
+        <!-- Populated dynamically by data/skills.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="project-filters reveal-up" id="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Populated dynamically by data/projects.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="timeline reveal-up">
+
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-year">2020 &mdash; 2022</span>
+            <h3 class="tl-title">Higher Secondary Certificate (HSC)</h3>
+            <p class="tl-sub">Science Stream (Physics, Chemistry, Mathematics)</p>
+            <p class="tl-detail">Built a strong academic foundation in core sciences with a focus on analytical thinking and  problem-solving. Developed interest in technology and logical reasoning, which later led to pursuing engineering in   AI &amp; ML.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-year">2022 &mdash; Present</span>
+            <h3 class="tl-title">Bachelor of Engineering</h3>
+            <p class="tl-sub">Artificial Intelligence &amp; Machine Learning</p>
+            <p class="tl-detail">Final Year. Covering AI, ML, web systems, cloud basics and DevOps fundamentals.</p>
+          </div>
+        </div>
+
+        <!-- <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-year">2024</span>
+            <h3 class="tl-title">Full Stack Development Internship</h3>
+            <p class="tl-sub">CodeAlpha</p>
+            <p class="tl-detail">Built a social media platform, game player server, and e-commerce website.</p>
+          </div>
+        </div> -->
+
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-year">Ongoing</span>
+            <h3 class="tl-title">Self Learning</h3>
+            <p class="tl-sub">Cloud, DevOps &amp; System Design</p>
+            <p class="tl-detail">React, Redux, NextJS, Docker, AWS, Kubernetes, Terraform, GitHub Actions and more.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-grid reveal-up">
+
+        <div class="contact-info">
+          <p class="contact-intro">
+            Open to opportunities, collaborations and interesting conversations.
+          </p>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:rajendramargale8767@gmail.com">rajendramargale8767@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>+91 8767561368</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Kothrud, Pune &mdash; 411038</span>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/RajendraMargale22" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rajendra-margale-803484343/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <!-- <a href="https://twitter.com/yourusername" class="social-link" target="_blank" rel="noopener" aria-label="Twitter / X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a> -->
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <input
+            type="text"
+            name="from_name"
+            placeholder="Your Name"
+            class="form-input"
+            required
+          />
+          <input
+            type="email"
+            name="from_email"
+            placeholder="Your Email"
+            class="form-input"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            class="form-input form-textarea"
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit" class="btn-primary">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">RM<span class="accent">.</span></span>
+      <p class="footer-copy">&copy; 2025 Rajendra Margale. Designed &amp; Built with purpose.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/RajendraMargale22" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rajendra-margale-803484343/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="data/skills.js"></script>
+  <script src="js/threeScene.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
