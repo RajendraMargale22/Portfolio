@@ -49,6 +49,17 @@ const projectsData = [
   },
   {
     id: 4,
+    title: "SpeakMind",
+    subtitle: "AI Chatbot Application",
+    description: "Full-stack AI chatbot with persistent conversations, secure authentication, and context-aware responses using scalable backend architecture.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+    categories: ["fullstack", "ai", "backend"],
+    image: "assets/speakmind.png",
+    live: "Frontend : https://speak-mind-pi.vercel.app/",
+    github: "https://github.com/RajendraMargale22/SpeakMind"
+  },
+  {
+    id: 5,
     title: "Keeper App",
     subtitle: "Lightweight Note Taking",
     description: "Lightweight note-taking application with CRUD operations and persistent storage.",
@@ -59,7 +70,7 @@ const projectsData = [
     github: "https://github.com/RajendraMargale22/keeper-app"
   },
   // {
-  //   id: 5,
+  //   id: 6,
   //   title: "To-Do App",
   //   subtitle: "Task Management",
   //   description: "Task management application with intuitive UI and real-time updates.",

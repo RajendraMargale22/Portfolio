@@ -1,7 +1,7 @@
 const skillsData = [
   {
     category: "Frontend",
-    skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "React Router", "React Hooks", "Redux", "EJS", "Bootstrap"]
+    skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "React Router", "React Hooks", "EJS", "Bootstrap"]
   },
   {
     category: "Backend",
@@ -13,7 +13,7 @@ const skillsData = [
   },
   {
     category: "DevOps & Tools",
-    skills: ["Git", "GitHub", "Docker", "NPM", "Postman", "Render", "Vercel", "Figma", "Canva"]
+    skills: ["Git", "GitHub", "NPM", "Postman", "Render", "Vercel", "Figma", "Canva"]
   },
   {
     category: "AI / ML",
@@ -21,7 +21,7 @@ const skillsData = [
   },
   {
     category: "Languages",
-    skills: ["C++", "C", "Python", "JavaScript", "TypeScript"]
+    skills: ["C", "C++", "Python", "JavaScript", "TypeScript"]
   }
 ];
 
