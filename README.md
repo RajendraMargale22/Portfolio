@@ -1,6 +1,6 @@
 # 🌐 Rajendra Margale – Portfolio Website
 
-This is my personal portfolio website showcasing my projects, skills, and experience as a developer. The website is designed to provide a clean and interactive interface with smooth animations and modern UI.
+This is my personal portfolio website showcasing my projects, skills and experience as a developer. The website is designed to provide a clean and interactive interface with smooth animations and modern UI.
 
 ---
 
@@ -81,14 +81,17 @@ You can download my resume directly from the website.
 
 ## 📬 Contact
 
-* Email: [rajendramargale8767@gmail.com](mailto:rajendramargale8767@gmail.com)
+* Email: [rajendramargale8767@gmail.com (main)](mailto:rajendramargale8767@gmail.com)
+* Email: [rajendramargale2211@gmail.com (work)](mailto:rajendramargale2211@gmail.com)
 * LinkedIn: [LinkedIn](https://www.linkedin.com/in/rajendra-margale-803484343/)
 * GitHub: [GitHub](https://github.com/RajendraMargale22)
+* LeetCode: [LeetCode](https://leetcode.com/u/RajendraMargale/)
+* GeeksForGeeks: [GeeksForGeeks](https://www.geeksforgeeks.org/profile/rajendrama9zik?tab=activity)
 
 ---
 
 ## ⭐ Final Note
 
-This portfolio represents my work, learning, and growth as a developer. It will be continuously updated with new projects and improvements.
+This portfolio represents my work, learning and growth as a developer. It will be continuously updated with new projects and improvements.
 
 ---
