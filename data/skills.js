@@ -1,11 +1,11 @@
 const skillsData = [
   {
     category: "Frontend",
-    skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "React Router", "React Hooks", "EJS", "Bootstrap"]
+    skills: ["HTML5", "CSS3", "JavaScript", "React", "React Router", "React Hooks", "EJS", "Bootstrap"]
   },
   {
     category: "Backend",
-    skills: ["Node.js", "Express.js", "FastAPI", "JWT Auth", "REST APIs"]
+    skills: ["Node.js", "Express.js", "JWT Auth", "REST APIs"]
   },
   {
     category: "Databases",

@@ -44,7 +44,7 @@ const projectsData = [
     stack: ["Python", "FastAPI", "React", "MongoDB", "Node.js", "Express"],
     categories: ["ai", "fullstack", "backend"],
     image: "assets/juryai.jpeg",
-    // live: "https://juryai-demo.vercel.app",
+    live: "https://jury-ai-production.up.railway.app/",
     github: "https://github.com/RajendraMargale22/JURY-AI"
   },
   {
